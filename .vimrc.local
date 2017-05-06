@@ -1,0 +1,30 @@
+[user]
+	email = andrewbstuntz@gmail.com
+	name = Andrew Stuntz
+#Thanks to Veezus Kreist for some sensible aliasing
+[alias]
+	ap = add -p
+	b = branch
+	c = commit
+	co = checkout
+	cp = cherry-pick
+	d = diff
+	dc = diff --cached
+	lga = log --graph --oneline --decorate --color --all --tags
+	lg = log --graph --oneline --merges --decorate --color --tags
+	me = merge
+	mf = merge --squash
+	no = show --name-only
+	pr = pull --rebase
+	put = push origin HEAD
+	ra = rebase --abort
+	rc = rebase --continue
+	reauthor = commit --amend --reset-author -CHEAD
+	s = status
+	st = status
+	squash = merge --squash
+	track = --set-upstream-to
+[color]
+	ui = true
+[core]
+	excludesfile = ~/.gitignore
