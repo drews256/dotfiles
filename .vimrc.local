@@ -20,7 +20,6 @@ set visualbell
 set nu
 set t_Co=16
 
-let g:polyglot_disabled = ['javascript']
 "set the runtime path to include Vundle and initialize
 "Use Vundle for easy plugin management
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -45,6 +44,9 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
 "This was installed, not certain I want it
 Plugin 'mustache/vim-mustache-handlebars'
+" Add some syntax highlight for .jsx
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 "let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 call vundle#end()            " required
@@ -61,7 +63,7 @@ augroup myfiletypes
   " Clear old autocmds in group
   autocmd!
   " autoindent with two spaces, always expand tabs
-  autocmd FileType text,ruby,eruby,yaml,html,cucumber,javascript,coffee set ai sw=2 sts=2 et ts=2
+  autocmd FileType text,ruby,eruby,yaml,html,cucumber,javascript,coffee,javascript.jsx set ai sw=2 sts=2 et ts=2
   autocmd BufNewFile,BufRead *.prawn setf ruby
 augroup END
 
